@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using System.Collections.Generic;
 
 namespace kata_anagrams.Test
 {
@@ -50,6 +51,17 @@ namespace kata_anagrams.Test
         {
             Anagrams anagrams = new Anagrams();
             var result = anagrams.IsAnagram("store scum", "customers");
+
+            Assert.AreEqual(true, result);
+        }
+
+        [Test]
+        public void List_Of_Words_With_Anagrams_In_The_Same_Line()
+        {
+            List<string> words = new List<string>() { "restful", "funeral", "adultery", "customers", "forty five",
+                "fluster", "real fun", "true lady", "store scum", "over fifty"};
+            Anagrams anagrams = new Anagrams();
+            var result = anagrams.SolveKata(words);
 
             Assert.AreEqual(true, result);
         }
