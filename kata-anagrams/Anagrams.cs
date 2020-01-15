@@ -14,7 +14,7 @@ namespace kata_anagrams
         /// <param name="anagram">The word you'll like to know if it's anagram to the other</param>
         public bool IsAnagram(string word, string anagram)
         {
-            return string.IsNullOrWhiteSpace(word) || string.IsNullOrWhiteSpace(word) || !HasWordLetters(word, anagram) 
+            return string.IsNullOrWhiteSpace(word) || string.IsNullOrWhiteSpace(anagram) || !HasWordLetters(word, anagram) 
                 ? false 
                 : true;
         }
@@ -27,10 +27,8 @@ namespace kata_anagrams
         /// <returns></returns>
         public bool HasWordLetters(string word, string anagram)
         {
-            if(!word.Contains(" ") && anagram.Contains(" "))
-                anagram = Regex.Replace(anagram, @"\s", string.Empty);
-            else
-                word = Regex.Replace(word, @"\s", string.Empty);
+            anagram = Regex.Replace(anagram, @"\s", string.Empty);
+            word = Regex.Replace(word, @"\s", string.Empty);
 
             foreach (var i in anagram)
                 if (!word.Contains(i))
@@ -41,8 +39,24 @@ namespace kata_anagrams
 
         public List<string> SolveKata(List<string> words)
         {
-
-            return default(List<string>);
+            List<string> anagrams = new List<string>();
+            
+            for(int i = 0; i < words.Count; i++)
+            {
+                bool isAnagram = false;
+                for (int j = i + 1; j < words.Count; j++)
+                {
+                    if(IsAnagram(words[i], words[j]))
+                    {
+                        isAnagram = true;
+                        words[i] += $" {words[j]}";
+                        words.RemoveAt(j);
+                    }
+                }
+                if(isAnagram)
+                    anagrams.Add(words[i]);
+            }
+            return anagrams;
         }
     }
 }
