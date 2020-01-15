@@ -10,9 +10,12 @@ namespace kata_anagrams.Test
         }
 
         [Test]
-        public void Test1()
+        public void Roam_And_Moro_Are_Anagram_Equals_False()
         {
-            Assert.Pass();
+            Anagrams anagrams = new Anagrams();
+            var result = anagrams.IsAnagram("room", "roam");
+
+            Assert.AreEqual(false, result);
         }
     }
 }
