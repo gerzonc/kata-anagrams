@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
@@ -16,7 +17,12 @@ namespace kata_anagrams
         {
             var anagram = new Anagrams();
             var words = File.ReadAllLines("wordlist.txt").ToList();
-            var result = anagram.SolveKata(words);
+            var result = new List<string>();
+            
+            if (words.Count == 0)
+                Console.WriteLine("File is empty!");
+            else
+               result = anagram.SolveKata(words);
 
             if(result.Count == 0)
                 Console.WriteLine("No anagrams found!");
