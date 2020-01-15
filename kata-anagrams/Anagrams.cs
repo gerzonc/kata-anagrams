@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Text.RegularExpressions;
 
 namespace kata_anagrams
 {
@@ -13,14 +14,21 @@ namespace kata_anagrams
         /// <param name="anagram">The word you'll like to know if it's anagram to another</param>
         public bool IsAnagram(string word, string anagram)
         {
-            if (word.Length != anagram.Length) 
+            if (string.IsNullOrWhiteSpace(word) || string.IsNullOrWhiteSpace(word) || !HasWordLetters(word, anagram)) 
                 return false;
 
-            if(!word.Contains(anagram))
-                return false;
-            
-            if (string.IsNullOrWhiteSpace(word) || string.IsNullOrWhiteSpace(word))
-                return false;
+            return true;
+        }
+
+        public bool HasWordLetters(string word, string anagram)
+        {
+            anagram = Regex.Replace(anagram, @"\s", string.Empty);
+            foreach(var i in anagram)
+            {
+
+                if (!word.Contains(i))
+                   return false;
+            }
 
             return true;
         }

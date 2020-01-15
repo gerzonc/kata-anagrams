@@ -36,6 +36,15 @@ namespace kata_anagrams.Test
             Assert.AreEqual(true, result);
         }
 
+        [Test]
+        public void First_Word_With_Whitespace_And_Second_Without_Equals_True()
+        {
+            Anagrams anagrams = new Anagrams();
+            var result = anagrams.IsAnagram("store scum", "customers");
+
+            Assert.AreEqual(true, result);
+        }
+
 
     }
 }
