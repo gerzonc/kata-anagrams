@@ -1,4 +1,6 @@
 ﻿using System;
+using System.IO;
+using System.Linq;
 
 namespace kata_anagrams
 {
@@ -12,7 +14,12 @@ namespace kata_anagrams
         
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var anagram = new Anagrams();
+            var words = File.ReadAllLines("wordlist.txt").ToList();
+            var result = anagram.SolveKata(words);
+
+            foreach(var word in result)
+                Console.WriteLine(word);
         }
     }
 }
