@@ -17,5 +17,14 @@ namespace kata_anagrams.Test
 
             Assert.AreEqual(false, result);
         }
+
+        [Test]
+        public void Empty_Space_Or_Null_String_Are_Not_Anagram_Equals_False()
+        {
+            Anagrams anagrams = new Anagrams();
+            var result = anagrams.IsAnagram("", "");
+
+            Assert.AreEqual(false, result);
+        }
     }
 }

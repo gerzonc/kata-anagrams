@@ -13,7 +13,11 @@ namespace kata_anagrams
         /// <param name="anagram">The word you'll like to know if it's anagram to another</param>
         public bool IsAnagram(string word, string anagram)
         {
-            if (word.Length != anagram.Length) return false;
+            if (word.Length != anagram.Length) 
+                return false;
+
+            if(!word.Contains(anagram))
+                return false;
 
             return true;
         }
