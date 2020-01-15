@@ -18,8 +18,12 @@ namespace kata_anagrams
             var words = File.ReadAllLines("wordlist.txt").ToList();
             var result = anagram.SolveKata(words);
 
-            foreach(var word in result)
-                Console.WriteLine(word);
+            if(result.Count == 0)
+                Console.WriteLine("No anagrams found!");
+            else
+                foreach(var word in result)
+                    Console.WriteLine(word);
+
         }
     }
 }
