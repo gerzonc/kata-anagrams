@@ -63,7 +63,9 @@ namespace kata_anagrams.Test
             Anagrams anagrams = new Anagrams();
             var result = anagrams.SolveKata(words);
 
-            Assert.AreEqual(true, result);
+            var expected = new List<string>() { "restful fluster", "funeral real fun", "adultery true lady", "customers store scum",
+                "forty five over fifty"};
+            Assert.AreEqual(expected, result);
         }
 
 
