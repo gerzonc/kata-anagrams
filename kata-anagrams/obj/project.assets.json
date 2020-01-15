@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gerzo\\source\\repos\\kata-anagrams\\kata-anagrams\\kata-anagrams.csproj",
+      "projectUniqueName": "C:\\Users\\gerzo\\Documents\\kata-anagrams\\kata-anagrams\\kata-anagrams.csproj",
       "projectName": "kata-anagrams",
-      "projectPath": "C:\\Users\\gerzo\\source\\repos\\kata-anagrams\\kata-anagrams\\kata-anagrams.csproj",
+      "projectPath": "C:\\Users\\gerzo\\Documents\\kata-anagrams\\kata-anagrams\\kata-anagrams.csproj",
       "packagesPath": "C:\\Users\\gerzo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gerzo\\source\\repos\\kata-anagrams\\kata-anagrams\\obj\\",
+      "outputPath": "C:\\Users\\gerzo\\Documents\\kata-anagrams\\kata-anagrams\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
