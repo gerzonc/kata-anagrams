@@ -10,3 +10,5 @@
 .vs/kata-anagrams/v16/Server/sqlite3/storage.ide
 .vs/kata-anagrams/v16/Server/sqlite3/storage.ide-shm
 .vs/kata-anagrams/v16/Server/sqlite3/storage.ide-wal
+.vs/kata-anagrams/v16/TestStore/0/000-0000.testlog
+.vs/kata-anagrams/v16/TestStore/0/testlog.manifest
