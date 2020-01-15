@@ -18,6 +18,9 @@ namespace kata_anagrams
 
             if(!word.Contains(anagram))
                 return false;
+            
+            if (string.IsNullOrWhiteSpace(word) || string.IsNullOrWhiteSpace(word))
+                return false;
 
             return true;
         }

@@ -26,5 +26,16 @@ namespace kata_anagrams.Test
 
             Assert.AreEqual(false, result);
         }
+
+        [Test]
+        public void Customers_And_Store_Scum_Are_Anagram_Equals_True()
+        {
+            Anagrams anagrams = new Anagrams();
+            var result = anagrams.IsAnagram("customers", "store scum");
+
+            Assert.AreEqual(true, result);
+        }
+
+
     }
 }
