@@ -1,0 +1,10 @@
+C:\Users\gerzo\Desktop\proyectoFinal\getting-started-finale\Anagrams\Anagrams\bin\Debug\netcoreapp2.2\Anagrams.deps.json
+C:\Users\gerzo\Desktop\proyectoFinal\getting-started-finale\Anagrams\Anagrams\bin\Debug\netcoreapp2.2\Anagrams.runtimeconfig.json
+C:\Users\gerzo\Desktop\proyectoFinal\getting-started-finale\Anagrams\Anagrams\bin\Debug\netcoreapp2.2\Anagrams.runtimeconfig.dev.json
+C:\Users\gerzo\Desktop\proyectoFinal\getting-started-finale\Anagrams\Anagrams\bin\Debug\netcoreapp2.2\Anagrams.dll
+C:\Users\gerzo\Desktop\proyectoFinal\getting-started-finale\Anagrams\Anagrams\bin\Debug\netcoreapp2.2\Anagrams.pdb
+C:\Users\gerzo\Desktop\proyectoFinal\getting-started-finale\Anagrams\Anagrams\obj\Debug\netcoreapp2.2\Anagrams.csprojAssemblyReference.cache
+C:\Users\gerzo\Desktop\proyectoFinal\getting-started-finale\Anagrams\Anagrams\obj\Debug\netcoreapp2.2\Anagrams.AssemblyInfoInputs.cache
+C:\Users\gerzo\Desktop\proyectoFinal\getting-started-finale\Anagrams\Anagrams\obj\Debug\netcoreapp2.2\Anagrams.AssemblyInfo.cs
+C:\Users\gerzo\Desktop\proyectoFinal\getting-started-finale\Anagrams\Anagrams\obj\Debug\netcoreapp2.2\Anagrams.dll
+C:\Users\gerzo\Desktop\proyectoFinal\getting-started-finale\Anagrams\Anagrams\obj\Debug\netcoreapp2.2\Anagrams.pdb
